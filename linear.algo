@@ -1,0 +1,35 @@
+ALGORITHM prb1_sol1
+VAR
+    t1,t2 : ARRAY_OF INTEGER[i,j];
+    s: INTEGER = 0
+BEGIN
+    // read elements of 2 arrays//
+    FOR i FROM 0 TO t1[i].length-1 STEP 1  DO
+        read (t1[i])
+    END_FOR
+    FOR j FROM 0 TO t2[j].length-1 STEP 1  DO
+        read (t2[j])
+    END_FOR
+
+    //compare first set to second set of 2 arrays and add to sum//
+    IF (i = j) THEN
+        s = 0
+    ELSE
+        s = s +i
+    END_IF
+
+    //compare second set to first set of 2 arrays and add to sum//
+    IF (j <> i) THEN
+        s = s + j
+    END_IF
+
+    write ("the sum is", s)
+END
+
+ALGORITHM algorithm_name
+VAR
+    t1, t2: HASH_TABLE<i,j,INTEGER>;
+    count: INTEGER = 1;
+BEGIN
+    
+END
